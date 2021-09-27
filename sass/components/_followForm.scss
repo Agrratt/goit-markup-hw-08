@@ -1,0 +1,44 @@
+.follow__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.follow__form {
+  display: flex;
+}
+
+.follow__input {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  background: transparent;
+  display: block;
+  transition: border-color var(--main-transition-duration)
+    var(--main-cubic-bezier);
+
+        &::placeholder {
+            font-size: 16px;
+            }
+
+        &:hover,
+        &:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            }
+}
+
+.follow__box {
+  position: relative;
+}

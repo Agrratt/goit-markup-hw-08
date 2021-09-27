@@ -1,0 +1,29 @@
+.network {
+  display: flex;
+}
+
+.network__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--main-transition-duration)
+    var(--main-cubic-bezier);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            }
+}
+
+.network__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.network__icon {
+  fill: #ffffff;
+}
