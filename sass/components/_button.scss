@@ -1,3 +1,23 @@
+.navigate__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.navigate__icon--close {
+  display: none;
+
+  .navigate__button.is-open & {
+    display: block;
+  }
+}
+
+.navigate__button.is-open .navigate__icon--menu {
+  display: none;
+}
+
 .button-order {
   display: inline-block;
 

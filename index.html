@@ -16,21 +16,34 @@
 
 <body>
     <!--хидер-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="header__text">
             <a class="logo link" href="/"> <span class="logo__accent">Web</span> Studio</a>
             <nav class="navigate">
-                <ul class="navigate__list">
-                    <li class="navigate__item">
-                        <a class="navigate__link link active" href="./index.html">Студия</a>
-                    </li>
-                    <li class="navigate__item">
-                        <a class="navigate__link link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="navigate__item">
-                        <a class="navigate__link link" href="">Контакты</a>
-                    </li>
-                </ul>
+                <button type="button" class="navigate__button is-open" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="navigate__icon" 
+                    width="40" height="40"
+                    aria-label="Переключатель мобильного меню">
+                        <use class="navigate__icon--menu" href="./images/sprite.svg#icon-menu_40px"></use>
+                        <use class="navigate__icon--menu" href="./images/sprite.svg#icon-menu_40px2x"></use>
+                        <use class="navigate__icon--close" href="./images/sprite.svg#icon-close_40px"></use>
+                        <use class="navigate__icon--close" href="./images/sprite.svg#icon-close_40px2x"></use>
+                    </svg>
+                </button>
+                <div class="navigate__box is-open" id="mobile-menu" data-menu>
+                    <ul class="navigate__list">
+                        <li class="navigate__item">
+                            <a class="navigate__link link active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigate__item">
+                            <a class="navigate__link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigate__item">
+                            <a class="navigate__link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                
             </nav>
             <ul class="contacts">
                 <li class="contacts__item">
@@ -51,7 +64,7 @@
             </ul>
         </div>
 
-    </header> -->
+    </header>
     <main>
 
         <!--хироу-->
@@ -523,6 +536,8 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+   
 </body>
 
 </html>

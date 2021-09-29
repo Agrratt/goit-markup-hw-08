@@ -67,30 +67,71 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .header__text {
   display: flex;
   align-items: center;
-  width: 1200px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 35px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .header__text {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__text {
+    width: 768px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__text {
+    width: 1200px;
+  }
 }
 
 .logo {
   font-family: 'Raleway';
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #000000;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: 280px;
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
 }
 
 .logo:hover, .logo:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    margin-right: 284px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__accent {
@@ -111,9 +152,31 @@ ul {
   color: var(--accent-color);
 }
 
+.navigate__box {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+}
+
+.navigate__box.is-open {
+  display: block;
+}
+
 .navigate__list {
   color: var(--accent-color);
-  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .navigate__list {
+    display: flex;
+  }
 }
 
 .active {
@@ -139,6 +202,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   display: block;
 }
 
@@ -158,8 +222,13 @@ ul {
 }
 
 .contacts {
-  margin-left: auto;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .contacts__item {
@@ -278,6 +347,26 @@ ul {
     font-size: 44px;
     line-height: 1.36;
   }
+}
+
+.navigate__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.navigate__icon--close {
+  display: none;
+}
+
+.navigate__button.is-open .navigate__icon--close {
+  display: block;
+}
+
+.navigate__button.is-open .navigate__icon--menu {
+  display: none;
 }
 
 .button-order {

@@ -1,5 +1,8 @@
 .contacts {
-  margin-left: auto;
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+  // margin-left: auto;
   display: flex;
 }
 
@@ -11,10 +14,10 @@
   color: var(--primary-text-color);
   align-items: center;
 
-    &:not(:last-child),
-    &:not(:last-child) {
+  &:not(:last-child),
+  &:not(:last-child) {
     margin-right: 50px;
-    }
+  }
 }
 
 .contacts__link {
@@ -32,10 +35,10 @@
 
   display: flex;
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
-    &:hover,
-    &:focus {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
-    }
+  }
 }
 
 .contacts__icon {
@@ -54,10 +57,8 @@
   margin-bottom: auto;
   transition: fill var(--main-transition-duration) var(--main-cubic-bezier);
 
-    .contacts__link:hover > &,
-    .contacts__link:focus > & {
+  .contacts__link:hover > &,
+  .contacts__link:focus > & {
     fill: var(--accent-color);
-    }
-
+  }
 }
-
