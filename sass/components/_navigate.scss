@@ -1,28 +1,14 @@
-.navigate__box {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
 
-  &.is-open {
-    display: block;
-  }
-
-  @media screen and(min-width: 1200px) {
-  }
-}
 
 .navigate__list {
-  color: var(--accent-color);
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+  
 
   @media screen and(min-width: 768px) {
     display: flex;
+    color: var(--accent-color);
   }
 }
 
