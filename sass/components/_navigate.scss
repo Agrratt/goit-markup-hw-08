@@ -9,6 +9,7 @@
   @media screen and(min-width: 768px) {
     display: flex;
     color: var(--accent-color);
+    // margin-right: 84px;
   }
 }
 
@@ -50,6 +51,7 @@
 
   display: block;
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
+  
   &:hover,
   &:focus {
     color: var(--accent-color);

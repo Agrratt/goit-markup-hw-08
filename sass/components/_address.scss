@@ -3,6 +3,7 @@
 
   margin-top: 20px;
 }
+
 .footer-addres__link {
   font-size: 14px;
   line-height: 2;
@@ -11,18 +12,18 @@
 
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
 }
+
 .footer-addres__map {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
   color: #ffffff;
-
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-addres__link.link:hover,

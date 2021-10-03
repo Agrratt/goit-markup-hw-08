@@ -2,44 +2,40 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .why__list {
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
+}
 
-  @media screen and(min-width: 1200px) {
+.why__item {
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
 
-  .why__item {
-    margin-bottom: 30px;
+  @media screen and (min-width: 768px), (max-width: 1199px) {
+    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
 
-    @media screen and (min-width: 480px) {
-      width: 450px;
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
     }
+  }
 
-    @media screen and (min-width: 768px), (max-width: 1199px) {
-      width: 354px;
-      flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
 
-      &:not(:nth-child(2n)) {
-        margin-right: 30px;
-      }
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-      flex-basis: calc((100% - 90px) / 4);
-
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }

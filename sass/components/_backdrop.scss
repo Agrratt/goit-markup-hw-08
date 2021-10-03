@@ -6,7 +6,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition: visibility var(--main-transition-duration)
-      var(--main-cubic-bezier),
+    var(--main-cubic-bezier),
     opacity var(--main-transition-duration) var(--main-cubic-bezier);
 }
 
@@ -31,6 +31,7 @@
   background-color: #ffffff;
   padding: 40px;
 }
+
 .button-close {
   position: absolute;
   width: 30px;
@@ -49,10 +50,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-    .button-close:hover > &,
-    .button-close:focus > & {
-        fill: var(--accent-color);
-     }
+  .button-close:hover > &,
+  .button-close:focus > & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form__text {
@@ -85,9 +86,9 @@
   transform: translate(0%, -50%);
   transition: fill var(--main-transition-duration) var(--main-cubic-bezier);
 
-    .modal-form__input:focus + & {
-        fill: var(--accent-color);
-    }
+  .modal-form__input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form__input {
@@ -100,11 +101,11 @@
   padding-left: 42px;
   transition: border var(--main-transition-duration) var(--main-cubic-bezier);
 
-    &:focus {
-        outline: none;
-        border: 1px solid var(--accent-color);
-        cursor: pointer;
-        }
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+  }
 }
 
 .modal-form__comment {
@@ -118,16 +119,16 @@
   margin-bottom: 18px;
   transition: border var(--main-transition-duration) var(--main-cubic-bezier);
 
-    &::placeholder {
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
-        color: rgba(117, 117, 117, 0.5);
-        }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-    &:focus {
-        outline: none;
-        border: 1px solid var(--accent-color);
-        cursor: pointer;
-        }
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+  }
 }

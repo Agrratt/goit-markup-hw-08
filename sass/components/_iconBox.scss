@@ -12,25 +12,25 @@
   height: 100%;
 
   transition: background-color var(--main-transition-duration)
-      var(--main-cubic-bezier),
+    var(--main-cubic-bezier),
     fill var(--main-transition-duration) var(--main-cubic-bezier),
     border-radius var(--main-transition-duration) var(--main-cubic-bezier);
 
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            fill: #ffffff;
-            }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #ffffff;
+  }
 }
 
 .icon-box__item {
   width: 44px;
   height: 44px;
 
-    &:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 10px;
-    }
+  }
 }

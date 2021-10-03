@@ -28,15 +28,15 @@
   transition: border-color var(--main-transition-duration)
     var(--main-cubic-bezier);
 
-        &::placeholder {
-            font-size: 16px;
-            }
+  &::placeholder {
+    font-size: 16px;
+  }
 
-        &:hover,
-        &:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            }
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .follow__box {

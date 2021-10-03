@@ -14,10 +14,10 @@
   transition: background-color var(--main-transition-duration)
     var(--main-cubic-bezier);
 
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-            }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .network__item:not(:last-child) {
