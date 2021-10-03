@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
-
+  
   @media screen and(min-width: 480px) {
     width: 480px;
   }
@@ -18,10 +18,9 @@
 .header__text {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 15px;
-  // padding-right: 35px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-right: 35px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -34,6 +33,8 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -73,6 +74,11 @@
     right: 15px;
     background-color: transparent;
     border: 0px;
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
   }
 }
 

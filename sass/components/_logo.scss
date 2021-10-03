@@ -4,19 +4,12 @@
   font-size: 24px;
   line-height: 1.17;
   color: #000000;
-  // padding-top: 16px;
-  // padding-bottom: 16px;
-
-  // margin-right: 280px;
+  
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
-  }
-
-  @media screen and(min-width: 480px) {
-    // margin-right: 284px;
   }
 
   @media screen and (min-width: 768px) {
@@ -36,7 +29,7 @@
 
 .logo-footer {
   color: #ffffff;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -48,4 +41,6 @@
   &:focus {
     color: var(--accent-color);
   }
+
+
 }

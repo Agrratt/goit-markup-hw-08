@@ -1,6 +1,5 @@
 .footer-addres {
   font-style: normal;
-
   margin-top: 20px;
 }
 
@@ -19,7 +18,8 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
-
+  white-space: nowrap;
+  
   &:hover,
   &:focus {
     color: var(--accent-color);

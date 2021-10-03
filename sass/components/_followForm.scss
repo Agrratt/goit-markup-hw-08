@@ -1,3 +1,13 @@
+.follow {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-left: 146px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+}
+
 .follow__title {
   font-weight: bold;
   font-size: 14px;
@@ -9,7 +19,21 @@
 }
 
 .follow__form {
+  
   display: flex;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+  }
 }
 
 .follow__input {
@@ -21,7 +45,7 @@
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   background: transparent;
   display: block;
@@ -37,8 +61,16 @@
     outline: none;
     border-color: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .follow__box {
   position: relative;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 }
