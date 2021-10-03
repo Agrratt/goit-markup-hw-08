@@ -4,7 +4,8 @@
   font-size: 24px;
   line-height: 1.17;
   color: #000000;
-  
+  padding-top: 16px;
+  padding-bottom: 16px;
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
 
   &:hover,

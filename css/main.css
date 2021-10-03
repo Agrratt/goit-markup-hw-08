@@ -68,25 +68,6 @@ ul {
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
-  text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .header {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    width: 1200px;
-  }
 }
 
 .header__text {
@@ -255,6 +236,8 @@ ul {
   font-size: 24px;
   line-height: 1.17;
   color: #000000;
+  padding-top: 16px;
+  padding-bottom: 16px;
   transition: color var(--main-transition-duration) var(--main-cubic-bezier);
 }
 
@@ -559,7 +542,6 @@ ul {
 }
 
 .follow-button {
-  /* display: inline-block; */
   width: 200px;
   padding-left: 29px;
   padding-top: 10px;
@@ -1349,12 +1331,26 @@ footer {
 
 .backdrop {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
+  top: 93px;
+  left: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   transition: visibility var(--main-transition-duration) var(--main-cubic-bezier), opacity var(--main-transition-duration) var(--main-cubic-bezier);
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    top: 208px;
+    left: 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
 }
 
 .backdrop.is-hidden {
@@ -1367,14 +1363,21 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 5;
-  width: 528px;
-  height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #ffffff;
+  width: 450px;
+  height: 609px;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .button-close {
@@ -1437,7 +1440,7 @@ footer {
 
 .modal-form__input {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1451,10 +1454,16 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form__input {
+    width: 448px;
+  }
+}
+
 .modal-form__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
   padding-top: 12px;
@@ -1476,6 +1485,12 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form__comment {
+    width: 448px;
+  }
+}
+
 .checkbox {
   display: flex;
   text-align: center;
@@ -1489,6 +1504,13 @@ footer {
 .checkbox__label {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .checkbox__label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .checkbox__label::before {
