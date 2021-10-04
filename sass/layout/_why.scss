@@ -16,22 +16,30 @@
 }
 
 .why__item {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
   @media screen and (min-width: 480px) {
     width: 450px;
   }
 
-  @media screen and (min-width: 768px), (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
     flex-basis: calc((100% - 30px) / 2);
 
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
+
+    &:nth-child(n + 2) {
+      margin-bottom: 0px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
     width: 270px;
+    margin-bottom: 30px;
     flex-basis: calc((100% - 90px) / 4);
 
     &:not(:last-child) {

@@ -1,9 +1,11 @@
 .follow {
+  margin-top: 60px;
+  
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     margin-left: 146px;
   }
-  @media screen and (max-width: 1199px) {
-    margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
   }
 
 }
